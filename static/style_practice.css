@@ -1,0 +1,42 @@
+h1 {
+    color:blue;
+}
+h2 {
+    color:red;
+
+}
+h3 {
+    color: green;
+}
+
+p {
+    color: blueviolet;
+}
+
+
+.hello_shr {
+    color: aqua;
+}
+
+.css2 {
+    color: brown;
+}
+
+#umair{
+    color: orange;
+}
+
+ol li {
+    color: yellow;
+}
+body {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/fc/Toothless-dancing-toothless.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.box1 {  width: 200px; 
+    padding: 20px;      /* Space inside the box */  
+    border: 2px solid black;  /* Border around the box */  
+    margin: 10px;       /* Space outside the box */}
+    

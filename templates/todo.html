@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="color: white; display: flex; justify-content: center; background-color: rgb(5, 5, 79);"> We are going to make a todo list</h1>
+
+    <form action="/todo" method="POST">
+        <label for="todo">todo</label>
+        <input type="text" name="todo">
+        <label for="number">number</label>
+        <input type="number" name="number">
+        <button type="submit">submit</button>
+    </form>
+
+
+{% for task in todo.items() %}
+<p>{{ task }}</p>
+{% endfor %}
+
+</html>

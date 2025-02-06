@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="calculator.css">
+
+    </head>
+
+    <body> 
+
+        <div class="calculator">
+
+            <div class="top-screen"> 
+                <input type="text" name="" id="screen">
+            </div>
+
+            <div class="buttons">
+                <button id="del" class="fun" onclick="removeOneCharacter()">Del</button>
+                <button id="sign" class="fun" onclick="square()">sqr</button>
+                <button id="percent" class="fun" onclick="squareRoot('%')">sqrt</button>
+                <button id="divide" class="mop" onclick="appendCharacter('/')">/</button>
+                
+                <button id="seven" class="num" onclick="appendCharacter('7')">7</button>
+                <button id="eight" class="num" onclick="appendCharacter('8')">8</button>
+                <button id="nine" class="num" onclick="appendCharacter('9')">9</button>
+                <button id="multiply" class="mop" onclick="appendCharacter('*')">*</button>
+                
+                <button id="four" class="num" onclick="appendCharacter('4')">4</button>
+                <button id="five" class="num" onclick="appendCharacter('5')">5</button>
+                <button id="six" class="num" onclick="appendCharacter('6')">6</button>
+                <button id="subtract" class="mop" onclick="appendCharacter('-')">-</button>
+                
+                <button id="one" class="num" onclick="appendCharacter('1')">1</button>
+                <button id="two" class="num" onclick="appendCharacter('2')">2</button>
+                <button id="three" class="num" onclick="appendCharacter('3')">3</button>
+                <button id="add" class="mop" onclick="appendCharacter('+')">+</button>
+                
+                <button id="clear" class="fun" onclick="clearScreen()">C</button>
+                <button id="zero" class="num" onclick="appendCharacter('0')">0</button>
+                <button id="dot" class="num" onclick="appendCharacter('.')">.</button>
+                <button id="equal" class="mop" onclick="calculate()">=</button>
+            </div>
+            
+        </div>
+
+        <script src="calculator.js"></script>
+    </body>
+
+
+</html>

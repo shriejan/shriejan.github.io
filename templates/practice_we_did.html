@@ -1,0 +1,303 @@
+<!-- doctype to tell brownser its version -->
+<!DOCTYPE html>
+
+<!-- a big html container -->
+<html>
+    <!-- head -->
+    <head>
+
+        <!-- we write links or cdns etc will explain later -->
+        <title>{{ name|lower }}</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+   
+   
+   <!-- body -->
+    <body>
+        <!-- inside it we write contents -->
+         <!-- 5. heading to strcture my data h1 to h6-->
+        <h1>My name is {{ name|lower }}</h1>
+        <h2>My name is {{ name|lower }}</h2>
+        <h3>My name is {{ name|lower }}</h3>
+        <h4 class="hello_shr">My name is {{ name|lower }}</h4>
+        <h5 class="css2"> My name is {{ name|lower }}</h5>
+        <h6>My name is {{ name|lower }}</h6>
+        <!-- 6. paragraph to write  -->
+        <p class="hello_shr">I have started learning html</p>
+        <!-- we are going to learn attribute tag -->
+        <!-- 7. how to bold it -->
+        <p id ="umair"> my name is <b>{{ name|lower }}</b></p>
+        <p> my name is <i>{{ name|lower }}</i></p>
+        <p style="text-align: center;"> my name is <em>{{ name|lower }}</em></p>
+        <!-- 8. goto a page using attribute tag -->
+        <a href="https://www.w3schools.com">  click me to w3 school  </a>
+        <h2>just to test css</h2>
+        <!-- 9. images -->
+        <img src="data:image/jpeg;base64,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" alt ="there is piture of toothless">
+
+        <ol>
+            <li>my name is {{ name|lower }}</li>
+            <li>my name is {{ name|lower }}</li>
+            <ul>
+                <li>hello</li>
+            </ul>
+        </ol>
+        <ul>
+            <li>my name is {{ name|lower }}</li>
+            <li>my name is {{ name|lower }}</li>
+        </ul>
+        <!-- 11. make a table of 3 rows and 2 column -->
+         <table border="10"> 
+            <tr>
+                <!-- td meaning stander and th meaning bold and center -->
+                <th>column 1 </th>
+                <th>column 2 </td>
+            </tr>
+            <tr>
+                <td>r1,c1 </td>
+                <td>r1,c2 </td>
+            </tr>
+            <tr>
+                <td>r2,c1 </td>
+                <td>r3,c2 </td>
+            </tr>
+            <tr>
+                <td>r3,c1 </td>
+                <td>r3,c2 </td>
+            </tr>
+            
+            
+         </table>
+
+
+
+        <!-- 12. forms -->
+        <form>
+            <input> </br>
+            <button>submit</button>
+        </form> 
+        <!-- 13. input and its types -->
+         <input type="username" placeholder="please write name">
+         <input type="password" placeholder="please type password"><br>
+
+         <!-- 14. how to label inputs -->
+          
+        <label>username</label>
+        <input type="username" placeholder="please write name"><br>
+
+        <!-- 15. textarea -->
+         <textarea>hello</textarea><br>
+         <!-- 16. dropdown menus -->
+          <label>select the age</label>
+        <select>
+            <option>kid</option>
+            <option>teenager</option>
+
+
+        </select><br>
+
+        <!-- 17. Check boxes and radio buttons -->
+         <label>check to confirm</label>
+        <input type="checkbox"><br>
+        <label>click on radio <button disabled="disabled"></button></label>
+        <input type="radio">
+
+        <!-- 18. how att -->
+         <!-- in above example type and placeholder are example of attribute -->
+
+        <!-- 19. Div tag -->
+        <div>
+            <h1>this is heading 1</h1>
+            <p>this is a paragraph</p>
+         </div>
+         <div>
+            <h2>this is heading 2</h2>
+            <p>this <span style="background-color: yellow;">paragraph</span> is simple</p>
+         </div>
+         <!-- for complete container div is used and for inline changes span is used -->
+
+
+
+<div style="background-color: red;padding: 2%;">
+
+
+    <div style="background-color: pink; text-align: center;">
+        hello
+    </div>
+    <div style="background-color: rgb(192, 255, 210);">
+        hello
+    </div>
+    
+</div>
+
+<!-- 21. header nav section footer dedicated workds so you could better arrange using css -->
+
+<!-- header is dedicated word for css like body or html you write introductory contents in it -->
+<header> 
+    <h1>this is heading 1</h1>
+    <p>this is a paragraph</p>
+</header>
+
+<nav>
+    <ul>
+        <li>{{ name|lower }}</li>
+        <li>profile</li>
+        <li>about</li>
+    </ul>
+</nav>
+
+
+
+<section>
+    <p></p>
+</section>
+
+<!-- 22 and 23 about video and audio -->
+<video width="320" height="240">
+    <source src="video.mp4" type="video/mp4">
+    browser dont support
+</video>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jNQXAC9IVRw?si=cKx0cygc6hRuZ7IK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+<div class="box1">This is a basic box model example.</div>
+
+
+<div class="box1">Thi sis same box but ising difernet properties</div>
+
+<p id="shrijan_id"> this is a cat  </p>
+    
+<!-- ste1 get elemenet by id -->
+<script>
+    // this is javascript comment
+    function change_color(){
+        document.getElementById("shrijan_id").style.color="pink";
+    };
+
+    function change_color2(){
+        document.getElementById("shrijan_id").style.color="blue";
+    };
+
+
+
+</script>
+
+<button onclick="change_color()">click me</button>
+<button onclick="change_color2()">click me too</button><br>
+    
+<img id="blb" height="200" src="https://i.pinimg.com/originals/e0/fd/25/e0fd25f9127a9a109a0648c83ee61643.png">
+
+
+
+<script>
+    function turn_on_bulb(){
+        document.getElementById("blb").src = "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_auto,q_auto:best/MSNBC/Components/Photo/_new/081209-light-bulb-03.jpg"
+    };
+
+    function turn_off_bulb(){
+        document.getElementById("blb").src = "https://i.pinimg.com/originals/e0/fd/25/e0fd25f9127a9a109a0648c83ee61643.png";
+    };
+
+
+
+</script>
+<br>
+<button onclick="turn_on_bulb()">turn on bulb</button>
+<button onclick="turn_off_bulb()">turn off bulb</button>
+
+
+<script>
+function get_by_class(){
+    document.querySelector(".box1").style.color="red";
+}
+
+</script>
+
+
+<button onclick="get_by_class()">click</button>
+
+
+<!-- 29. html colors -->
+<h1 style="color: rgb(255, 0, 255);">rgb format colors</h1>
+<h1 style="color: #9d6136;">hexa format</h1>
+
+<!-- 30. inline changes -->
+<p>
+    my name is <em style="color: #0b81ff;">{{ name|lower }}</em> somehting after will stay same.
+
+</p>
+
+<!-- 31. we have forms method with the forms when i will click on submit button somethign will happen, now it will be our choice whatever we want to achieve with that -->
+<form action="page_not_found.html">
+    <label>username</label>
+    <input type="text" name="username" required><br>
+    
+    <label>password</label>
+    <!-- required  -->
+    <input type="password" required name="hello"> <br>
+    
+    <button type="submit">submit</button>
+</form>
+
+
+<a href="https://www.google.com/maps?q=37.7749,-122.4194" target="_blank">Click to View Location</a>
+
+<p style="font-size: 100px;">hi</p>
+<p style="font-size: 100pt;">hi</p>
+<p>hello my name is <em style="font-size: 70%;">{{ name|lower }}</em> hello</p>
+
+<h1 style="text-align: center;"> hello, this is the last slide of today</h1>
+
+
+<!-- making big paragraph for test bold and italics and underline -->
+
+<p style="text-align: center; font-weight: bold; font-style: italic; text-decoration: underline;">\Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia quas veniam est corrupti amet tenetur eius vero sapiente nostrum nisi, dolorem fugit a ut, alias vel enim ratione cum deserunt.</p>
+
+
+<br>
+<p>hello my fav fruits are 
+    <em style="font-size: 70%;">    {{ colors }}    </em> 
+
+</p>
+
+<p>the name and age dictionary is {{ name_age }}</p>
+
+
+<ol style="background-color: #0b81ff;">
+    {% for color in colors %}
+    <li style="color: beige;">{{ color }}</li>
+    {% endfor %}
+</ol>
+
+
+</body>
+
+<!-- apply a loop on dictionary -->
+ <div style="background-color: #36bd15; text-align: center;"> 
+ {% for key, value in name_age.items() %}
+
+<p> the name is {{ key }} and age is {{ value }}</p> 
+
+ {% endfor %}
+</div>
+
+<!-- make input for weight and height and pass it to python -->
+
+<form action="/bmi_calculator", method="POST">
+    <label>weight</label>
+    <input type="text" name="weight" required><br>
+    
+    <label>height</label>
+    <!-- required  -->
+    <input type="text" required name="height"> <br>
+    
+    <button type="submit">submit</button>
+</form>
+
+
+
+
+
+</html>

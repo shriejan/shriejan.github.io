@@ -1,0 +1,24 @@
+<!-- doctype to tell brownser its version -->
+<!DOCTYPE html>
+
+<!-- a big html container -->
+<html>
+    <!-- head -->
+    <head>
+
+        <!-- we write links or cdns etc will explain later -->
+        <title>{{ name|lower }}</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+   
+   
+    <body>
+        <nav>
+            <ul>
+                <li> <a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </body>
+</html> 

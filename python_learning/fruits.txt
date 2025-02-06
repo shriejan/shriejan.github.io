@@ -1,0 +1,8 @@
+name color price
+apple red 10
+banana yellow 7
+pear green 92
+orange orange 80
+watermelon pink 46
+stawberry pink 22
+mango yellow 20
